@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -11,6 +12,7 @@ import { AgGridModule } from 'ag-grid-angular';
   imports: [
         BrowserModule,
         AgGridModule,
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

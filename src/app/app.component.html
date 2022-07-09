@@ -7,11 +7,13 @@
         <title>Document</title>
     </head>
     <body>
-        <ag-grid-angular
-            style="width: 800px; height: 500px;"
-            class="ag-theme-balham"
-            [rowData]="rowData"
-            [columnDefs]="columnDefs"
-        ></ag-grid-angular>
+        <div *ngIf="rowData">
+            <ag-grid-angular
+                style="width: 1500px; height: 800px;"
+                class="ag-theme-balham"
+                [rowData]="rowData"
+                [columnDefs]="columnDefs"
+            ></ag-grid-angular>
+        </div>
     </body>
 </html>
