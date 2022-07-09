@@ -8,11 +8,14 @@
     </head>
     <body>
         <div *ngIf="rowData">
+            <button (click)="getSelectedRows()">Get Selected Rows</button>
             <ag-grid-angular
+                #agGrid
                 style="width: 1500px; height: 800px;"
                 class="ag-theme-balham"
                 [rowData]="rowData"
                 [columnDefs]="columnDefs"
+                rowSelection="multiple"
             ></ag-grid-angular>
         </div>
     </body>
